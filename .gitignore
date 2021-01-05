@@ -1,2 +1,6 @@
-# Project exclude paths
-/node_modules/
+node_modules
+dist
+.parcel-cache
+.DS_Store
+sucai
+.cache

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "sass": "^1.32.0"
   }
 }
