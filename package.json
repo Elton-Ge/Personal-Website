@@ -1,0 +1,16 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Elton Ge",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel": "^1.12.4"
+  }
+}

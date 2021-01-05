@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.navbar {
+  background-color: #3583b6;
+  position: fixed;
+}
+.navbar-nav {
+  margin-left: 4rem;
+  margin-bottom: 0;
+}
+.navbar-nav li {
+  margin-left: 1rem;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.home {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.701)), to(rgba(0, 0, 0, 0.701))), url(../img/coder.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)), url(../img/coder.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6rem 3rem;
+}
+
+.home__textBox {
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+.home__textBox h1 {
+  font-weight: 600;
+}
+.home__textBox button {
+  margin-top: 1rem;
+}
+
+.about, .resume, .contact {
+  background: url("../img/un.jpg");
+  background-size: cover;
+  height: auto;
+  padding-top: 5rem;
+}
+
+.about__leftContent, .resume__leftContent, .contact__leftContent {
+  height: auto;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about__leftContent h2, .resume__leftContent h2, .contact__leftContent h2 {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.about__leftContent img, .resume__leftContent img, .contact__leftContent img {
+  width: inherit;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgba(163, 163, 163, 0.5);
+}
+.about__leftContent img:hover, .resume__leftContent img:hover, .contact__leftContent img:hover {
+  transform: scale(1.1);
+}
+.about__leftContent--status, .resume__leftContent--status, .contact__leftContent--status {
+  margin-top: 2rem;
+  font-size: 80%;
+}
+.about__leftContent--status h3, .resume__leftContent--status h3, .contact__leftContent--status h3 {
+  text-align: center;
+  background: #3399ff;
+  border-radius: 1rem;
+  color: #e2e2e2;
+  font-size: 1.5rem;
+}
+.about__leftContent--attachment, .resume__leftContent--attachment, .contact__leftContent--attachment {
+  margin-top: 2rem;
+}
+
+.about__rightContent, .resume__rightContent, .contact__rightContent {
+  height: auto;
+  background-color: #eeeeee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.about__rightContent--shape, .resume__rightContent--shape, .contact__rightContent--shape {
+  position: absolute;
+  right: -150px;
+  top: -20px;
+  z-index: 0;
+  opacity: 0.4;
+}
+.about__rightContent h2, .resume__rightContent h2, .contact__rightContent h2 {
+  font-weight: 600;
+  padding: 2rem 1rem;
+}
+.about__rightContent p, .resume__rightContent p, .contact__rightContent p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.about__rightContent--aboutMe, .resume__rightContent--aboutMe, .resume__experience, .resume__education {
+  margin-top: 2rem;
+}
+.about__rightContent--aboutMe--color, .resume__rightContent--aboutMe--color, .resume__experience--color, .resume__education--color {
+  color: #005cbf;
+}
+.about__rightContent--aboutMe--seeMore, .resume__rightContent--aboutMe--seeMore, .resume__experience--seeMore, .resume__education--seeMore {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.about__rightContent--aboutMe--seeMore button, .resume__rightContent--aboutMe--seeMore button, .resume__experience--seeMore button, .resume__education--seeMore button {
+  font-size: 1.2rem;
+}
+
+.softSkill {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.softSkill h4 {
+  font-size: 90%;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+.softSkill svg {
+  width: 3rem;
+  height: auto;
+}
+.softSkill p {
+  font-size: 80%;
+  color: #2b2b2b;
+}
+
+.resume__experience, .resume__education {
+  border-left: 1px solid dodgerblue;
+  padding: 0;
+}
+.resume__experience--text, .resume__education--text {
+  padding: 1rem;
+  background: #dedede;
+  border-left: 2px solid dodgerblue;
+  font-size: 80%;
+  position: relative;
+  left: 30px;
+  margin-bottom: 2rem;
+  width: 95%;
+  transition: all 0.5s ease-in;
+}
+.resume__experience--text:hover, .resume__education--text:hover {
+  transform: scale(1.005);
+  box-shadow: 5px 5px 5px 5px #cbcbcb;
+}
+.resume__experience--text::before, .resume__education--text::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: -42px;
+  border: 2px solid #5371ff;
+  z-index: 2;
+}
+.resume__experience--text::after, .resume__education--text::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #5371ff;
+  border-radius: 10px;
+  width: 29px;
+  height: 2px;
+  top: 25px;
+  left: -29px;
+  z-index: 1;
+}
+
+.page {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.page--active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cdcdcd;
+  flex-direction: row;
+  height: 4rem;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.footer__list li {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.footer__list li ion-icon {
+  color: #173732;
+}
+
+.contact__map {
+  border-radius: 10%;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+}
+
+.contact__position {
+  font-size: 120%;
+  margin-top: 1.5rem;
+  color: dodgerblue;
+}
+.contact__position h5 {
+  color: #000;
+}
+.contact__position .row {
+  margin-top: 0.8rem;
+}
+
+.blog {
+  background-color: #fff;
+  margin-top: 4rem;
+}
+.blog__card {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  background: #eae2e3;
+}
+
+/*# sourceMappingURL=style.css.map */
