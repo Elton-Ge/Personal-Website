@@ -19,6 +19,7 @@ body {
 .navbar {
   background-color: #4B77BE;
   position: fixed;
+  padding: 0;
 }
 .navbar-nav {
   margin-left: 4rem;
@@ -231,27 +232,27 @@ body {
   opacity: 1;
 }
 
-footer {
-  background-color: #c8c8c8;
-  background-size: cover;
-}
-
 .footer {
   background-color: #c8c8c8;
   background-size: cover;
-  display: flex;
-  height: 4rem;
-  align-items: center;
+  padding: 0.5rem 0;
 }
 .footer__left {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .footer__right {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0;
+}
+.footer__right li {
+  padding: 0 1rem;
+  text-align: center;
 }
 .footer__right ion-icon {
   font-size: 1.8rem;
@@ -292,13 +293,12 @@ footer {
 
 .js--nav-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
