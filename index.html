@@ -605,16 +605,11 @@
                         <form action="https://formspree.io/f/xdopykna"
                               method="POST"
                         >
-                            <div class="row">
-                                <div class="col-md-6 mb-3 form-group">
-                                    <label for="firstName">First name</label>
-                                    <input type="text" class="form-control" id="firstName"
-                                           placeholder="Your first name">
-                                </div>
-                                <div class="col-md-6 mb-3 form-group">
-                                    <label for="lastName">Last name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="Your last name">
-                                </div>
+                            <div class="mb-3 g-recaptcha" data-sitekey="your_site_key">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" name="name" id="full-name" class="form-control"
+                                       placeholder="First and Last"
+                                       required="">
                             </div>
 
                             <div class="mb-3">
@@ -624,13 +619,14 @@
                                         <span class="input-group-text">@</span>
                                     </div>
                                     <input type="text" name="_replyto" class="form-control" id="email"
-                                           placeholder="Email">
+                                           placeholder="Email" required="">
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label>Phone</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                                <label>TelePhone Number (Optional)</label>
+                                <input type="telephone" name="telephone" id="telephone" class="form-control"
+                                       placeholder="Your TelePhone Number">
                             </div>
 
                             <div class="mb-3">
@@ -641,7 +637,7 @@
                                 </div>
                             </div>
                             <input type="hidden" name="_subject" value="New submission!"/>
-                            <input type="hidden" name="_language" value="es"/>
+                            <input type="hidden" name="_language" value="en"/>
                             <button class="btn btn-success btn-lg btn-block mb-3" type="submit">SUBMIT</button>
                         </form>
                     </div>
@@ -799,7 +795,8 @@
     </div>
 </main>
 <footer>
-    <div class="copyrights ">© 2020 All rights reserved. Designed by <a href="https://elton-ge.netlify.app/">Elton Ge</a></div>
+    <div class="copyrights ">© 2020 All rights reserved. Designed by <a href="https://elton-ge.netlify.app/">Elton
+        Ge</a></div>
     <ul class="footer__list">
         <li><a href="https://twitter.com/eltonge3" target="_blank">
             <ion-icon name="logo-twitter"></ion-icon>
@@ -826,6 +823,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script src="src/js/jquery.waypoints.min.js"></script>
 <script src="src/js/script.js"></script>
 </body>
