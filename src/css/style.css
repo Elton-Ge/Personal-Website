@@ -16,9 +16,15 @@ body {
   }
 }
 
+.fixed__top {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
 .navbar {
   background-color: #4B77BE;
-  position: fixed;
   padding: 0;
 }
 .navbar-nav {
@@ -30,8 +36,8 @@ body {
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100%;
 }
 
@@ -296,14 +302,15 @@ footer {
   background: #eae2e3;
 }
 
-.js--nav-icon {
-  display: inline-block;
-  vertical-align: middle;
+.navbar-toggler {
+  width: 1.5em;
+  height: 1.5em;
   content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
   color: #fff;
+  font-weight: bold;
   font-size: 1.5rem;
+  border: 2px #fff solid;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
