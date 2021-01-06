@@ -8,7 +8,12 @@ body {
   background-color: #fff;
   font-family: "Lato", "Roboto", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: calc(1.265rem + 0.18vw);
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
 .navbar {
@@ -217,28 +222,31 @@ body {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #cdcdcd;
-  flex-direction: row;
-  height: 4rem;
+  background-color: #c8c8c8;
+  background-size: cover;
 }
 
-.footer__list {
+.footer {
+  background-color: #c8c8c8;
+  background-size: cover;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+}
+.footer__left {
+  display: flex;
+  justify-content: center;
+}
+.footer__right {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 2rem;
-  margin-left: 3rem;
+  justify-content: space-evenly;
+  margin-bottom: 0;
 }
-.footer__list li {
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-.footer__list li ion-icon {
-  color: #173732;
+.footer__right ion-icon {
+  font-size: 1.8rem;
+  color: #0b2e13;
+  vertical-align: center;
 }
 
 .contact__map {

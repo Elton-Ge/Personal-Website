@@ -1,3 +1,5 @@
+@import "../../node_modules/rfs/scss";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +10,7 @@ body {
   background-color: #fff;
   font-family: "Lato", "Roboto", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  @include font-size(1.4rem);
 }
 
 .navbar {
@@ -251,31 +253,36 @@ body {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #cdcdcd;
-  flex-direction: row;
-  height: 4rem;
+  background-color: #c8c8c8;
+  background-size: cover;
 }
 
-.footer__list {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 2rem;
-  margin-left: 3rem;
+.footer {
 
-  li {
-    font-size: 2rem;
-    margin-left: 2rem;
+  background-color: #c8c8c8;
+  background-size: cover;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+  }
+  &__right {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
 
     ion-icon {
-      color: #173732;
+      font-size: 1.8rem;
+      color: #0b2e13;
+      vertical-align: center;
     }
   }
 }
+
 
 .contact__map {
   border-radius: 10%;
@@ -303,6 +310,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 4rem;
+
   &__card {
     margin-top: 0.4rem;
     font-size: 1rem;
