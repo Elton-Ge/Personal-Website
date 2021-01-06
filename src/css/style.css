@@ -232,9 +232,13 @@ body {
   opacity: 1;
 }
 
-.footer {
+footer {
   background-color: #c8c8c8;
   background-size: cover;
+  background-repeat: repeat;
+}
+
+.footer {
   padding: 0.5rem 0;
 }
 .footer__left {
