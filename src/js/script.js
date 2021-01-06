@@ -1,5 +1,4 @@
 'use strict';
-
 function createNav() {
     var previous = '';
     var current = 'HOME';
@@ -57,9 +56,27 @@ function createNav() {
         navItem.classList.add(className);
     }
 }
-
-function main() {
+$(document).ready(function (){
     createNav();
-}
 
-main();
+    /* Mobile navigation */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--nav');
+        var icon = $('.js--nav-icon')
+
+        nav.slideToggle(200);
+
+        if (icon.attr("name")==='menu-sharp') {
+            icon.attr("name",'close-sharp')
+        } else {
+            icon.attr("name",'menu-sharp')
+        }
+    });
+
+})
+
+
+
+
+
+

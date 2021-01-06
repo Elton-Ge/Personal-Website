@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  background-color: #3583b6;
+  background-color: #4B77BE;
   position: fixed;
 }
 .navbar-nav {
@@ -261,13 +261,26 @@ footer {
 }
 
 .blog {
-  background-color: #fff;
+  background-image: url("../img/white.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-top: 4rem;
 }
 .blog__card {
   margin-top: 0.4rem;
   font-size: 1rem;
   background: #eae2e3;
+}
+
+.js--nav-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
