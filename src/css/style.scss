@@ -13,6 +13,7 @@ body {
   @include font-size(1.4rem);
 }
 
+/*Navbar*/
 .fixed__top {
   position: fixed;
   z-index: 999;
@@ -34,12 +35,25 @@ body {
   }
 }
 
+.navbar-toggler {
+  width: 1.5em;
+  height: 1.5em;
+  content: "";
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px #fff solid;
+  cursor: pointer;
+
+}
+
 .logo {
   width: 4rem;
   height: 4rem;
   border-radius: 100%;
 }
 
+/*Home Page*/
 .home {
   background-image: -webkit-gradient(
                   linear,
@@ -85,6 +99,7 @@ body {
   }
 }
 
+/*About Page*/
 .about, .resume, .contact {
   background: url("../img/un.jpg");
   background-size: cover;
@@ -203,6 +218,7 @@ body {
   }
 }
 
+/*Resume Page*/
 .resume__experience, .resume__education {
   border-left: 1px solid dodgerblue;
   padding: 0;
@@ -252,6 +268,7 @@ body {
   }
 }
 
+/*For ALL Pages*/
 .page {
   display: none;
   top: 0;
@@ -269,6 +286,43 @@ body {
   opacity: 1;
 }
 
+/*Contact Page*/
+.contact__map {
+  border-radius: 10%;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+}
+
+.contact__position {
+  font-size: 120%;
+  margin-top: 1.5rem;
+  color: dodgerblue;
+
+  h5 {
+    color: #000;
+  }
+
+  .row {
+    margin-top: 0.8rem;
+  }
+}
+
+/*Blog Page*/
+.blog {
+  background-image: url("../img/white.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 4rem;
+
+  &__card {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    background: #eae2e3;
+  }
+}
+
+/*Footer */
 footer {
   background-color: #c8c8c8;
   background-size: cover;
@@ -304,50 +358,3 @@ footer {
     }
   }
 }
-
-.contact__map {
-  border-radius: 10%;
-  overflow: hidden;
-  width: 50%;
-  height: auto;
-}
-
-.contact__position {
-  font-size: 120%;
-  margin-top: 1.5rem;
-  color: dodgerblue;
-
-  h5 {
-    color: #000;
-  }
-
-  .row {
-    margin-top: 0.8rem;
-  }
-}
-
-.blog {
-  background-image: url("../img/white.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 4rem;
-
-  &__card {
-    margin-top: 0.4rem;
-    font-size: 1rem;
-    background: #eae2e3;
-  }
-}
-
-.navbar-toggler {
-  width: 1.5em;
-  height: 1.5em;
-  content: "";
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
-  border: 2px #fff solid;
-  cursor: pointer;
-
-}
-
