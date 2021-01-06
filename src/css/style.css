@@ -51,7 +51,8 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 5%;
 }
 .home__textBox h5 {
   margin-top: 1rem;
