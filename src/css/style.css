@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-  background-color: #4B77BE;
+  background-color: #9dcaf8;
   padding: 0;
 }
 .navbar-nav {
@@ -48,9 +48,8 @@ body {
 }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 100%;
+  width: 6rem;
+  height: 6rem;
 }
 
 /*Home Page*/
