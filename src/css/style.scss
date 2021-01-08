@@ -263,6 +263,18 @@ body {
       left: -29px;
       z-index: 1;
     }
+
+    &--content {
+      list-style: none;
+      li {
+        margin-top: 0.5rem;
+      }
+      li::before{
+        content: '✅';
+        display: inline-block;
+        margin-right: 0.4rem;
+      }
+    }
   }
 }
 

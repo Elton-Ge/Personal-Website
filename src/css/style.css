@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -234,6 +235,17 @@ body {
   top: 25px;
   left: -29px;
   z-index: 1;
+}
+.resume__experience--text--content, .resume__education--text--content {
+  list-style: none;
+}
+.resume__experience--text--content li, .resume__education--text--content li {
+  margin-top: 0.5rem;
+}
+.resume__experience--text--content li::before, .resume__education--text--content li::before {
+  content: "✅";
+  display: inline-block;
+  margin-right: 0.4rem;
 }
 
 /*For ALL Pages*/
