@@ -27,6 +27,7 @@ body {
 
 .navbar {
   background-color: #9dcaf8;
+  box-shadow: 2px 2px 3px 3px #75a3c9;
   padding: 0;
 }
 .navbar-nav {
@@ -185,6 +186,7 @@ body {
 .softSkill svg {
   width: 3rem;
   height: auto;
+  margin-right: 1rem;
 }
 .softSkill p {
   font-size: 80%;
