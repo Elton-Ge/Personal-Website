@@ -209,6 +209,12 @@ body {
   width: 95%;
   transition: all 0.5s ease-in;
 }
+.resume__experience--text .occupation, .resume__education--text .occupation {
+  color: blue;
+}
+.resume__experience--text h5, .resume__education--text h5 {
+  color: #0069d9;
+}
 .resume__experience--text:hover, .resume__education--text:hover {
   transform: scale(1.005);
   box-shadow: 5px 5px 5px 5px #cbcbcb;
