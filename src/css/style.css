@@ -256,6 +256,12 @@ body {
   margin-right: 0.4rem;
 }
 
+.work__history li::before {
+  content: "⭕️";
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
 /*For ALL Pages*/
 .page {
   display: none;
@@ -305,6 +311,7 @@ body {
   margin-top: 0.4rem;
   font-size: 1rem;
   background: #eae2e3;
+  height: 420px;
 }
 
 /*Footer */
